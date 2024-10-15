@@ -7,7 +7,7 @@ public class NumberSum {
 	public static void main(String[] args) 
 	{
 	
-		//Declare the variable
+		//Declare the variables
 		int num;
 		int sum = 0;
 		int number;
