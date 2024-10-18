@@ -33,35 +33,35 @@ public class GuessingGame {
 		Random random = new Random();
 		
 		// variable stores the random value, and generates a random integer in range 1 to 20
-		SecrectNum = random.nextInt(20) +1; 
+		SecrectNum = random.nextInt (20) +1; 
 
 		
-		//program checks to see if user input and randomly generated number are the same
+		//prompt for userinput
 		System.out.println("Please enter a integer from 1-20:");  
 		UserNum = input.nextInt();
 		
+		//if computer num = user num, crongrats message is displated
+		if (SecrectNum == UserNum) {
+		System.out.println("Congrats! you won!");
+		}
 		
-		
-		//Error Statement
-		 while (UserNum < 1 || UserNum > 20) {
-            System.out.println("Invalid input"); 
-            break;
-		 }
-		 
+		//else includes while loop: when computer number isnt = to user number, do the following:
+		else {
 		while (SecrectNum != UserNum) {
-        
 			
-			//print the values of the computer randomly generated integer and the user input random integer
-			System.out.println("Computer's Number: " + SecrectNum);
-			System.out.println("User's Number: " + UserNum);
+			
 			System.out.println("Oops... Try Again!");
 			
+			//prompt user again
 			System.out.println("Please enter a integer from 1-20:");  
 			UserNum = input.nextInt();
 			
+			//if user guesses right congrats message is shown and program ends
+			if (SecrectNum == UserNum) {
+				System.out.println("Congrats! you won!");
+				}
 		}
-		
-		System.out.println("Congrats! you won!");
+		}
 		
 	}
 }
@@ -70,8 +70,28 @@ public class GuessingGame {
 
 Test Case 1:
 
+This program will generate a random number 1-20, and you will do the same.
+Your goal is to pick the same number as the program!
+Please enter a integer from 1-20:
+11
+Oops... Try Again!
+Please enter a integer from 1-20:
+12
+Oops... Try Again!
+Please enter a integer from 1-20:
+13
+Oops... Try Again!
+Please enter a integer from 1-20:
+14
+Congrats! you won!
+
 
 Test Case 2:
 
+This program will generate a random number 1-20, and you will do the same.
+Your goal is to pick the same number as the program!
+Please enter a integer from 1-20:
+2
+Congrats! you won!
 
  */
