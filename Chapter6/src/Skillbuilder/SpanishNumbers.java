@@ -1,55 +1,20 @@
 package Skillbuilder;
 
 public class SpanishNumbers {
-	public static void main(String[] args) {
-	    
-		//Go through the numbers 1-10 ad state restrictions
-	       for (int i = 1; i <= 10; i++) {
-	        
-	    	   //method to display the Spanish word for the number
-	    	   displaySpanishNumber(i);
-	       }
-	   }
-	 
-	//method to display the Spanish word for the number passed
-	   public static void displaySpanishNumber(number) {
-	       String spanishWord = null;
-	       switch (number) {
-	           case 1:
-	               spanishWord = "Uno";
-	               break;
-	           case 2:
-	               spanishWord = "Dos";
-	               break;
-	           case 3:
-	               spanishWord = "Tres";
-	               break;
-	           case 4:
-	               spanishWord = "Cuatro";
-	               break;
-	           case 5:
-	               spanishWord = "Cinco";
-	               break;
-	           case 6:
-	               spanishWord = "Seis";
-	               break;
-	           case 7:
-	               spanishWord = "Siete";
-	               break;
-	           case 8:
-	               spanishWord = "Ocho";
-	               break;
-	           case 9:
-	               spanishWord = "Nueve";
-	               break;
-	           case 10:
-	               spanishWord = "Diez";
-	               break;
-	 
-	       }
-	       // Display the number and its Spanish equivalent
-	       System.out.println(number + " in Spanish is: " + spanishWord);
-	   }
-	}
+    
+public static void SpanNumbers(int num) {
+  
+	String[] numbersInSpanish = {" 1 uno"," 2 dos"," 3 tres"," 4 cuatro"," 5 cinco"," 6 seis"," 7 siete"," 8 ocho"," 9 nueve"," 10 diez"};
 
+	System.out.println(numbersInSpanish[num]);
+}
+
+public static void main(String args[]) { 
+	for (int i = 0; i <= 9; i++){ 
+		 SpanNumbers(i); 
+    }
+		   }
+}
+
+	
 
