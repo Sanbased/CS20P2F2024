@@ -1,5 +1,6 @@
 package CRT;
 import java.util.Scanner;
+import java.util.Random;
 
 public class Ch4CRTwork {
 
@@ -8,19 +9,34 @@ public class Ch4CRTwork {
 		
 		Scanner userInput = new Scanner(System.in);
 		
-		System.out.println("please enter your number.");
-		int number = userInput.nextInt();
-		 
-		switch (number % 2) { 
-		case 0: System.out.println("even number"); 
-		break; 
+		 int AGE;
+
 		
-		case 1: System.out.println("odd number"); 
-		break;
-		}
+		System.out.println("Please enter your age:");
+		 AGE = userInput.nextInt();
 		
+		 if (AGE < 18) {
+			    System.out.println("Child");
+
+			} else  {
+			    if (AGE >= 18) {
+
+			        if (AGE < 65) {
+			            System.out.println("Adult");
+
+			        } else {
+			            System.out.println("Senior");
+			        }
+			    }
+			}
 	}
 }
+			        
+
+		
+		
+	
+
 		
 	
 	
