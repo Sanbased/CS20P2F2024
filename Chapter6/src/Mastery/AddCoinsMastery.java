@@ -18,7 +18,7 @@ public class AddCoinsMastery {
 		//prompting the user for the amount of each type of coin
 		
 		System.out.print("Enter amount of quarters:");
-		int quart = userInput.nextInt(); // stores # of Quarters entered by user
+		int quart = userInput.nextInt(); // stores # of  Quarters entered by user
 		
 		System.out.print("Enter amount of dimes:");
 		int dimes = userInput.nextInt(); // stores # of Dimes entered by user

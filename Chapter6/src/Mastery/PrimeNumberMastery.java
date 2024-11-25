@@ -25,7 +25,7 @@ public class PrimeNumberMastery {
 			  // set the input as an int
 			  int num = input.nextInt();
 			  
-			//print statement to tell the user if the given number is prime or not.
+			//print statement to tell the user if  the given number is prime or not.
 			  // directly added the method into the print statement
 			  //if isPrime is true, "is prime number" will print.
 			  //if isPrime is false, "is not prime" will print. 

@@ -78,7 +78,7 @@ public static void displayMenu() {
    public static double convert(int choice, double value) {
       
    	switch (choice) {
-   	case 1: return value * 2.54; // inch to centi
+   	case 1: return value * 2.54; // inch to  centi
    	case 2: return value / 2.54; //centi to inch
    	case 3: return value * 30.48; // feet to centi
    	case 4: return value / 30.48; // centi to feet 
