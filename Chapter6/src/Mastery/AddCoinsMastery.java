@@ -39,7 +39,7 @@ public class AddCoinsMastery {
 	public static String getDollarAmount(int quart, int dimes, int nicks, int pens) {
 		
 		// calculate the value of coins in dollars 
-		double total = (quart *0.25) + (dimes * 0.10) + (nicks *0.05) + (pens *0.01);
+		double total = (quart *0.25) + (dimes * 0.10) + (nicks *0.05) + (pens *0.01); 
 		
 		// total amount is rounded to 2 decimal places and $ sign is added 
 		return String.format("$%.2f", total);
