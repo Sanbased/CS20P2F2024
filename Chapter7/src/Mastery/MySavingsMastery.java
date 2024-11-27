@@ -5,9 +5,9 @@ import java.util.Scanner;
 public class MySavingsMastery {
 	public static void main(String[] args) {
 		
-		 Scanner input = new Scanner(System.in);
+		Scanner input = new Scanner(System.in);
 		
-		PiggyBank piggyBank = new PiggyBank();
+		PiggyBank PiggyBank = new PiggyBank();
 		
 		int choice;
 		
@@ -27,31 +27,31 @@ public class MySavingsMastery {
 			switch (choice) {
 			
 			case 1:
-				piggyBank.showTotal();
+				PiggyBank.showTotal();
 				break;
 				
 			case 2:
-				piggyBank.addPenny();
+				PiggyBank.addPenny();
 				System.out.println("Added a penny.");
 				break;
 				
 			case 3:
-				piggyBank.addNickel();
+				PiggyBank.addNickel();
 				System.out.println("Added a nickel.");
 				break;
 				
 			case 4:
-				piggyBank.addDime();
+				PiggyBank.addDime();
 				System.out.println("Added a dime.");
 				break;
 				
 			case 5:
-				piggyBank.addQuarter();
+				PiggyBank.addQuarter();
 				System.out.println("Added a quarter.");
 				break;
 				
 			case 6:
-				piggyBank.takeMoneyOut();
+				PiggyBank.takeMoneyOut();
 				System.out.println("All money has been removed from the bank.");
 				break;
 				
@@ -71,51 +71,6 @@ public class MySavingsMastery {
 	}
 	
 }
-
-	class PiggyBank {
-		private int pennies;
-		private int nickels;
-		private int dimes;
-		private int quarters;
-		
-		public PiggyBank() {
-			pennies = 0;
-			nickels = 0;
-			dimes = 0;
-			quarters = 0;
-		}
-		
-		public void addPenny() {
-			pennies++;
-		}
-		
-		public void addNickel() {
-			nickels++;
-		}
-		
-		public void addDime() {
-			dimes++;
-		}
-		
-		public void addQuarter() {
-			quarters++;
-		}
-		
-		public void takeMoneyOut() {
-			pennies = 0;
-			nickels = 0;
-			dimes = 0;
-			quarters = 0;
-		}
-		
-		public double getTotal() {
-			return pennies * 0.01 + nickels * 0.05 + dimes * 0.10 + quarters * 0.25;
-		}
-		
-		public void showTotal() {
-			System.out.printf("Total in the Bank: $%.2f\n", getTotal());
-		}
-	}
 
 
 
