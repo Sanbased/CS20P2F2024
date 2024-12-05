@@ -2,7 +2,7 @@
 
 Program: AddCoinsMastery.java        Date: Nov 5th 2024
 
-Purpose: figures out if a number is prime or not
+Purpose: add different coins and calcualte total
 
 School: CHHS
 Course: Computer Science 20
