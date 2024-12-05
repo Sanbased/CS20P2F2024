@@ -40,8 +40,4 @@ public class PiggyBank {
 	public double getTotal() {
 		return pennies * 0.01 + nickels * 0.05 + dimes * 0.10 + quarters * 0.25;
 	}
-	
-	public void showTotal() {
-		System.out.printf("Total in the Bank: $%.2f\n", getTotal());
-	}
 }

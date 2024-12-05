@@ -35,7 +35,7 @@ public class MySavingsMastery {
 			switch (choice) {
 			
 			case 1:
-				PiggyBank.showTotal();
+				System.out.printf("Total in the Bank: $%.2f\n", PiggyBank.getTotal());
 				break;
 				
 			case 2:

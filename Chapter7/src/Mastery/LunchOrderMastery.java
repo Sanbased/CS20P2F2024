@@ -26,7 +26,7 @@ public class LunchOrderMastery {
 		numham = input.nextInt();
 		System.out.println("Each hamburger has " + hamburger.GCarb() + "g of carbs, " + hamburger.GFat() + " g of fat, and " + hamburger.GFiber() + "g of fiber");
 		
-		System.out.println("Enter number of Salad: ");
+		System.out.println("Enter number of Salads: ");
 		numsalad = input.nextInt();
 		System.out.println("Each salad has " + salad.GCarb() + "g of carbs, " + salad.GFat() + " g of fat, and " + salad.GFiber() + "g of fiber");		
 		
@@ -39,7 +39,7 @@ public class LunchOrderMastery {
 		System.out.println("Each soda has " + soda.GCarb() + "g of carbs, " + soda.GFat() + " g of fat, and " + soda.GFiber() + "g of fiber");		
 		
 	
-		System.out.println("Your order comes to: $" + formating.format(numham*hamburger.TPrice() + numsalad*salad.TPrice() + numff*ff.TPrice() + numsoda*soda.TPrice()));
+		System.out.println("Your order total is: $" + formating.format(numham*hamburger.TPrice() + numsalad*salad.TPrice() + numff*ff.TPrice() + numsoda*soda.TPrice()));
 		
 	}
 }
