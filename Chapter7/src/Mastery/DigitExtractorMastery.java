@@ -23,7 +23,7 @@ public class DigitExtractorMastery {
 		//Prompt the user to enter a number
 		System.out.print("Please enter an integer of choice:");
 		
-		//Create a num object to store the user input, aswell as to link the Numb.java class
+		//Create a num object to store the user input, aswell as to link the Numb class
 		//We can use num.(method name goes here) to use methods from the Numb.java class
 		Numb num = new Numb(input.nextInt());
 		
@@ -59,14 +59,15 @@ public class DigitExtractorMastery {
 			}
 		
 		//Switch statement to calculate the option picked by the user
+		//calling methods from Numb class to get whole number, ones place, tens place, and hundreds place values
 		switch (choice) {
 		
 		//Whole number
-		case "w": System.out.println("your integer is " + num.whole()); 
+		case "w": System.out.println("your integer is " + num.whole());
 			break;
 		
 		//Ones place
-		case "o": System.out.println("The ones place digit is: " + num.ones()); 
+		case "o": System.out.println("The ones place digit is: " + num.ones());
 			break;
 		
 		//Tens palce
