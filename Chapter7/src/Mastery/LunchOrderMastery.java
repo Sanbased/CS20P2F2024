@@ -45,32 +45,28 @@ public class LunchOrderMastery {
 		//store user value in the numham variable
 		numham = input.nextInt();
 		//print hamburger facts3
-		System.out.println("Each hamburger has " + hamburger.GCarb() + 
-				"g of carbs, " + hamburger.GFat() + " g of fat, and " + hamburger.GFiber() + "g of fiber");
+		System.out.println("Each hamburger has " + hamburger.GCarb() + "g of carbs, " + hamburger.GFat() + " g of fat, and " + hamburger.GFiber() + "g of fiber");
 		
 		//prompt user for number of salads
 		System.out.println("Enter number of Salads: ");
 		//store user value in the numsalad variable
 		numsalad = input.nextInt();
 		//print salad facts
-		System.out.println("Each salad has " + salad.GCarb() + 
-				"g of carbs, " + salad.GFat() + " g of fat, and " + salad.GFiber() + "g of fiber");		
+		System.out.println("Each salad has " + salad.GCarb() + "g of carbs, " + salad.GFat() + " g of fat, and " + salad.GFiber() + "g of fiber");		
 		
 		//prompt user for the number of French Fries
 		System.out.println("Enter number of French Fries: ");
 		//store user value in the numff variable
 		numff= input.nextInt();
 		//print French Fries facts
-		System.out.println("Each order of French Fries has " + ff.GCarb() + 
-				"g of carbs, " + ff.GFat() + " g of fat, and " + ff.GFiber() + "g of fiber");		
+		System.out.println("Each order of French Fries has " + ff.GCarb() + "g of carbs, " + ff.GFat() + " g of fat, and " + ff.GFiber() + "g of fiber");		
 		
 		//prompt user for the number of sodas
 		System.out.println("Enter number of Sodas: ");
 		//store user value in the numsoda variable
 		numsoda = input.nextInt();
 		//print soda facts
-		System.out.println("Each soda has " + soda.GCarb() + 
-				"g of carbs, " + soda.GFat() + " g of fat, and " + soda.GFiber() + "g of fiber");		
+		System.out.println("Each soda has " + soda.GCarb() + "g of carbs, " + soda.GFat() + " g of fat, and " + soda.GFiber() + "g of fiber");		
 		
 		//print the order total 
 		//use the decimal formatting declared at the start of the program
