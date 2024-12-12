@@ -16,10 +16,20 @@ public class Gradebook {
 	public void GetGrades() {
 		for (int student = 0; student < grades.length; student++){
 			System.out.println("Enter student " + (student +1) + "'s grades:");
-		}
+		
 		for (int test = 0; test < grades[student].length; test++) {
 			System.out.println("  Test " + (test + 1) + ": ");
 			 grades[student][test] = input.nextInt();
 		}
 		}
+		}
+	
+	public void showGrades() {
+		
+		System.out.println("Gradebook:");
+		for (int student = 0; student < grades.length; student++) {
+			
+		}
+		
+	}
 }
