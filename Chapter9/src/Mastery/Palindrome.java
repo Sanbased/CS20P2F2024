@@ -42,7 +42,7 @@ public class Palindrome {
 		//calculation to find out if the userinput is a palindrome or not
 		for (int i = 0; i < wordletters.length / 2; i++) {
 			
-			//compares the characters from start to end or array 
+			//compares the characters from start to end of array 
 			//if a character doesn't match the reversed counterpart, it is not a palindrome. Therefore ispalindrome is set to false. 
 			if (wordletters[i] != wordletters[wordletters.length - 1 - i]) {
 				ispalindrome = false;
