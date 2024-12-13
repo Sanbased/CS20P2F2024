@@ -35,7 +35,7 @@ public class Gradebook {
 			 grades[student][test] = input.nextInt();
 		}
 		}
-		}
+		}//
 	
 	//method loops through the 5 test values for each student and prints them 
 	public void ShowGrades() {
