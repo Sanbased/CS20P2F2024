@@ -1,4 +1,6 @@
-/BlinkLED.class
-/ReadButton.class
-/ButtonsAndLEDs.class
-/TugOfWar.class
+/ReadTemp.class
+/TempAndHumidity.class
+/h.class
+/h2.class
+/h3.class
+/Temperatureandhumidity.class
