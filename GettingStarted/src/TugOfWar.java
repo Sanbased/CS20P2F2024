@@ -30,7 +30,7 @@ public class TugOfWar {
 	        
 	        while (redCount < 10 && greenCount <10) {
 	        	if (redButton.getState()) {
-	        		redCount++;
+	        		redCount++;  
 	        		Thread.sleep(150);
 	        	}
 	        	if (greenButton.getState()) {
