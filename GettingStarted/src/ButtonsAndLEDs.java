@@ -46,7 +46,6 @@ public class ButtonsAndLEDs {
                 	
                 }
                 	
-        	 
             if( redButton.getState()){
                 greenLED.setState(false);
             } else {

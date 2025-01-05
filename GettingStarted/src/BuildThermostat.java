@@ -33,45 +33,47 @@ public class BuildThermostat {
 	    	//temp that user sets. default temp is 21C
 	        int SetTemp = 21;
 	        
-	        int counter = 0;
-	        
+	      //current temperature variable
+	        double CurrentTemp = temperatureSensor.getTemperature();
+	  
 	        while (true) {
+	        	// 100 iterations, each with 100ms delay = 10 seconds 
+	        	for (int i = 0; i <100; i++) {
 	        	
 	        	//green button increases set temp, red button decreases
 	        if (greenButton.getState()) {
         		SetTemp++;
-        		Thread.sleep(150);
+        		 System.out.println("The Set temperature increased to: "+ SetTemp + " °C");
+        		 while (greenButton.getState()) {
+	                    Thread.sleep(10);
+	                } 
         	}
-	        
+	       
 	        if (redButton.getState()) {
         		SetTemp--;
-        		Thread.sleep(150);
+        		System.out.println("The Set temperature decreased to: "+ SetTemp + " °C");
+        		while (redButton.getState()) {
+                    Thread.sleep(10);
+                }
         	}
-	        
-	        //current temperature variable
-	        double CurrentTemp = temperatureSensor.getTemperature();
-	        
-	        
+
 	        // if the absolute values of the current temp and set temp are less than or equal to 2, green led will turn on. 
 	        //else red led will turn on.
 	        if (Math.abs(CurrentTemp - SetTemp) <= 2) {
 	        	 redLED.setState(false);
 		         greenLED.setState(true); 
 	        }
-	        
 	        else {
 	        	 redLED.setState(true);
 		         greenLED.setState(false);
-	        }
+	        }  
+                Thread.sleep(100); //100ms delay for each iteration of the for loop.
+	        	}
 	        
-	        counter++;
-	        if (counter>+100) { 
-	        	  // print the set temp and current temp every 10 seconds.
-		        System.out.println("Temperature: " + CurrentTemp + " °C" + " Set temperature: "+ SetTemp + " °C");
-	            Thread.sleep(10000);
-	            counter = 0;
-	        }
-	        Thread.sleep(100);
-	        }
+	     // print the set temp and current temp every 10 seconds.
+        	System.out.println("Current Temperature: " + CurrentTemp + " °C");
+        	System.out.println("The Set temperature is: "+ SetTemp + " °C");
+        	
+	        }  
 	}
 }

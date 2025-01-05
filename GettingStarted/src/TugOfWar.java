@@ -48,12 +48,6 @@ public class TugOfWar {
 	            redLED.setState(false);
 	            greenLED.setState(false);
 	            Thread.sleep(400);
-	            redLED.setState(true);
-	            greenLED.setState(true);
-	            Thread.sleep(400);
-	            redLED.setState(false);
-	            greenLED.setState(false);
-	            Thread.sleep(400);
 	        }
 	        	
 	        if (redCount >= 10) {

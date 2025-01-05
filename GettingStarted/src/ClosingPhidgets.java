@@ -9,10 +9,14 @@ public class ClosingPhidgets {
 	        //Open
 	        temperatureSensor.open(1000);
 
-	        //Use your Phidgets
+	      //Use your Phidgets
 	        System.out.println("Temperature: " + temperatureSensor.getTemperature() + " °C" );
 	        
 	        //Close your Phidgets
 	        temperatureSensor.close();
+	        
+	        //Open
+	        temperatureSensor.open(1000);
+ 
 	    }
 }
